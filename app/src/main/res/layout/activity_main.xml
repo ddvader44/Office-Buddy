@@ -32,6 +32,7 @@
         android:rowCount="2">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/pdfView"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_margin="10dp"
@@ -56,6 +57,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/docView"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_margin="10dp"
@@ -80,6 +82,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/excelView"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_margin="10dp"
@@ -104,6 +107,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/pptView"
             android:layout_width="170dp"
             android:layout_height="170dp"
             android:layout_margin="10dp"
