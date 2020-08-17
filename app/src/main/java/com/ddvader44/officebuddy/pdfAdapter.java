@@ -21,7 +21,7 @@ public class pdfAdapter extends ArrayAdapter<File> {
     ViewHolder viewHolder;
     ArrayList<File> arrayList;
 
-    public pdfAdapter(@NonNull Context context, ViewHolder viewHolder, ArrayList<File> arrayList) {
+    public pdfAdapter(@NonNull Context context,ArrayList<File> arrayList) {
         super(context, R.layout.pdf_adapter,arrayList);
         this.context = context;
         this.arrayList = arrayList;
