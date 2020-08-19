@@ -6,9 +6,12 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -34,7 +37,15 @@ public class pdfActivity extends AppCompatActivity {
         dir = new File(Environment.getExternalStorageDirectory().toString());
 
         missionPermission();
+        pdfListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               Intent intent = new Intent(pdfActivity.this,viewPdfActivity.class);
+               intent.putExtra("position",position);
+               startActivity(intent);
 
+            }
+        });
     }
 
     private void missionPermission() {
