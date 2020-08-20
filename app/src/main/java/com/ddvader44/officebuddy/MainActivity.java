@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ddvader44.officebuddy.doc.docActivity;
+import com.ddvader44.officebuddy.pdf.pdfActivity;
+
 public class MainActivity extends AppCompatActivity {
     CardView pdf,doc,excel,ppt;
     @Override
@@ -20,7 +23,13 @@ public class MainActivity extends AppCompatActivity {
         pdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,pdfActivity.class));
+                startActivity(new Intent(MainActivity.this, pdfActivity.class));
+            }
+        });
+        doc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this , docActivity.class));
             }
         });
     }

@@ -1,9 +1,11 @@
-package com.ddvader44.officebuddy;
+package com.ddvader44.officebuddy.pdf;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.ddvader44.officebuddy.R;
+import com.ddvader44.officebuddy.pdf.pdfActivity;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle;
 

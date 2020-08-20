@@ -1,6 +1,5 @@
-package com.ddvader44.officebuddy;
+package com.ddvader44.officebuddy.pdf;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -14,6 +13,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.ddvader44.officebuddy.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class pdfActivity extends AppCompatActivity {
         pdfListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent intent = new Intent(pdfActivity.this,viewPdfActivity.class);
+               Intent intent = new Intent(pdfActivity.this, viewPdfActivity.class);
                intent.putExtra("position",position);
                startActivity(intent);
 
