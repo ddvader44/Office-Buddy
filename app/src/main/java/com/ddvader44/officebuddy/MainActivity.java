@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.ddvader44.officebuddy.doc.docActivity;
+import com.ddvader44.officebuddy.excel.excelActivity;
 import com.ddvader44.officebuddy.pdf.pdfActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                startActivity(new Intent(MainActivity.this , docActivity.class));
+            }
+        });
+        excel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, excelActivity.class));
             }
         });
     }

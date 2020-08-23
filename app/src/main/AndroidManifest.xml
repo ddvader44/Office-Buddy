@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".excel.excelActivity"></activity>
         <activity android:name=".doc.docActivity" />
         <activity android:name=".pdf.viewPdfActivity" />
         <activity android:name=".pdf.pdfActivity" />
@@ -23,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -34,6 +36,5 @@
                 android:resource="@xml/provider_paths" />
         </provider>
     </application>
-
 
 </manifest>
