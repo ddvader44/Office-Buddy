@@ -10,6 +10,7 @@ import android.view.View;
 import com.ddvader44.officebuddy.doc.docActivity;
 import com.ddvader44.officebuddy.excel.excelActivity;
 import com.ddvader44.officebuddy.pdf.pdfActivity;
+import com.ddvader44.officebuddy.ppt.pptActivity;
 
 public class MainActivity extends AppCompatActivity {
     CardView pdf,doc,excel,ppt;
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, excelActivity.class));
+            }
+        });
+        ppt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, pptActivity.class));
             }
         });
     }

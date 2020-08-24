@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".excel.excelActivity"
+    tools:context=".ppt.pptActivity"
     android:background="@color/gray">
     <ListView
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView_excel"
+        android:id="@+id/listView_ppt"
         android:divider="#2d2d2d"
         android:dividerHeight="10dp"
         >
